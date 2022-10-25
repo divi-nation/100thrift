@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.add_new_product{
+   display: none;
+}
+
+.add_new_product.active{
+   display: inline;
+   height: 95vh;
+   width: 95vw;
+   position: absolute;
+   left: 2vw;
+   top: 2vh;
+   background: rgb(255, 255, 255);
+   z-index: 20;
+   box-shadow: 0 0 5px 3px grey;
+   padding: 50px;
+   overflow-y: auto;
+ 
+ }
+ .add_new_product form{
+   display: flex;
+   flex-direction: column;
+ }
+ .add_new_product .a_title {
+   color: #222;
+   width: 95%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   
+  }
+  .add_new_product .images{
+   display: flex;
+   flex-direction: column;
+   color: #222;
+  }
+  .images label{
+   margin-top: 30px;
+   margin-bottom: -20px;
+  }
+
+
+ .add_new_product form input{
+   margin-top: 50px;
+   height: 50px;
+   padding: 10px 0 50px 0;
+   width: 300px;
+   border: none;
+   border-bottom: 1px solid #666;
+   outline: none;
+ }
+ .images input{
+   border-bottom: 1px solid red;
+  }
+
+  select{
+   width: 300px;
+   margin-top: 40px;
+   height: 50px;
+   margin-bottom: 30px;
+  }
+
+  form .submit input{
+   background: #222;
+   color: white;
+   padding-top: 20px;
+   margin-bottom: 30px;
+   padding-bottom: 20px;
+   }
+
+
+.container{
+    border: 1px solid red;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    overflow-y: hidden;
+}
+.left{
+ }
+.logo{
+    height: 50px;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu_icon{
+    height: 25px;
+    width: 25px;
+    border: 1px solid blue;
+}
+.menu_n_subs{
+    width: 100%;
+    height: calc(100vh - 55px);
+    border: 1px solid rgba(0, 0, 255, 0.093);
+    overflow-y: auto;
+    padding: 10px;
+ }
+
+.menu_n_sub{
+     margin-bottom: 20px;
+}
+.menu h3{
+    color: blue;
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.sub{
+    padding-left: 10px;
+    margin-left: 20px;
+    border-left: 1px solid rgba(44, 55, 87, 0.46);
+}
+.sub_item{
+    margin-top: 15px;
+}
+.sub_item h6{
+    font-weight: 200;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+    border: 1px solid blue;
+}
+.cen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabs{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    box-shadow: 2px 0px 5px 1px grey;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: fixed;
+    z-index: 5;
+    width: 83vw;
+
+}
+ .t_left{
+     display: flex;
+    padding-left: 20px;
+    left: 0;
+    position: absolute;
+    left: 0;
+
+ }
+ .tab_item{
+    margin-left: 25px;
+    font-size: 15px;
+ }
+ .tab_item h6{
+    font-weight: 400;
+ }
+
+ .t_right{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+   }
+.t_right .icon{
+    margin-right: 30px;
+    margin-left: 10px;
+    
+}
+.current_admin{
+    display: flex;
+}
+.profile_image{
+    height: 35px;
+    width: 35px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.a_name h6{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.a_role p{
+    font-size: 13px;
+    font-weight: 200;
+}
+.right{
+    background: rgb(220, 216, 216);
+    background: linear-gradient(145deg, white , rgba(200, 212, 235, 0.754));
+    overflow-y: auto;
+    position: relative;
+    width: 83vw;
+    overflow-x: hidden;
+}
+
+.banner{
+    width: 100%;
+    padding: 30px;
+
+    background: white;
+    height: max-content;
+    margin-top: 10px;
+    padding-top: 80px;
+    font-size: 50px;
+    color: blue;
+ }
+ .banner span{
+   color: red;
+   font-size: 40px;
+ }
+ .banner h5{
+   font-weight: 400;
+ }
+ .b_comment h6{
+   font-weight: 200;
+   font-size: 12px;
+   letter-spacing: -1px;
+   color: rgb(246, 16, 16);
+ }
+
+ .card_row{
+    width: 84vw;
+    height: 220px;
+     margin-top: 30px;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+ }
+ .card{
+    height: 80%;
+    border: 4px solid white;
+    box-shadow: 0 0 5px 1px grey;
+    width: 350px;
+    margin-left: 30px;
+    background: url('../../assets/graph.jpeg'), rgba(255, 255, 255, 0.854);
+    background-size: cover;
+    background-position: center;
+     background-blend-mode: overlay;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: space-between;
+     text-align: center;
+     padding: 15px;
+     font-size: 12px;
+     font-weight: 300;
+ }
+ .value h5{
+   font-size: 22px;
+   font-weight: 400;
+   color: blue;
+ }
+ .des1{
+   color: red;
+ }
+ 
+
+ .card span{
+   color: green;
+ }
+ .card_row .overflow{
+    display: flex;
+    height: 100%;
+    width: max-content;
+  }
+
+ .some_title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+ }
+
+ .some_title .btn{
+    background: #222;
+    padding: 8px;
+    width: 300px;
+    border-radius: 30px;
+    color: whitesmoke;
+    font-size: 13px;
+ }
+
+ .recent_activities{
+    width: 100%;
+    height: 320px;
+     display: grid;
+    grid-template-columns: 4fr 6fr;
+    position: relative;
+ }
+
+ .recent_orders, .recent_users{
+     padding: 10px;
+    position: relative;
+    background: white;
+    margin: 15px;
+    box-shadow: 0 0 5px 1px grey;
+
+
+
+ }
+ .recent_orders{
+ }
+
+ .sub_header{
+   margin: 15px;
+     padding: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(66, 65, 112, 0.389);
+ }
+ .sub_header h6{
+    font-size: 14px;
+    font-weight: 400;
+ }
+ .orders{
+   
+     height: 170px;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+
+ .order_lables, .order_item{
+    display: flex;
+    align-items: center;
+     font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #444;
+ }
+ .order_lables{
+    width: 100%;
+
+ }
+ .order_lables span{
+    font-weight: 800;
+    width: 25%;
+ }
+
+ .order_item h6{
+    font-size: 12px;
+    font-weight: 400;
+ }
+ .recent_users h6{
+    font-size: 16px;
+    font-weight: 400;
+ }
+ .order_item .item{
+    width: 25%;
+   overflow-x: auto;
+ }
+ .reviews{
+    margin-bottom: 20px;
+    padding: 15px;
+     display: grid;
+    grid-template-columns: 4fr 2fr;
+    position: relative;
+ }
+
+ .complains{
+    height: 300px;
+    overflow-y: auto;
+    background: white;
+    box-shadow: 0 0 5px 1px grey;
+    margin-right: 20px;
+  }
+
+ .complain_item{
+    display: flex;
+    position: relative;
+     height: max-content;
+     margin-top: 30px;
+  }
+
+  .complain_item .icon{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .complaint{
+    width: 80%;
+    height: max-content;
+    border-bottom-left-radius: 20px;
+     margin-top: 10px;
+    background: rgba(111, 230, 230, 0.257);
+   }
+
+   .complaint h6{
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px;
+    color: #333;
+
+    
+   }
+
+   .complain_item .user{
+    position: absolute;
+    left: 80px;
+    bottom: -18px;
+    display: flex;
+    align-items: center;
+    }
+
+   .user h6{
+    font-weight: 300;
+    margin-left: 10px;
+    
+   }
+   .notes{
+      padding: 15px;
+     box-shadow: 0 0 5px 1px grey;
+    height: 300px;
+    overflow-y: auto;
+    background: white;
+    color: #333;
+
+   }
+   .note{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    align-items: center;
+    margin-top: 30px;
+     
+   }
+   .notes h5{
+    font-size: 13  px;
+    font-weight: 400;
+   }
+
+   .notes h6{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.408);
+    font-weight: 400;
+    margin-top: 6px;
+    padding-bottom: 5px;
+   }
+
+
+
+   
+   @media (max-width: 800px){
+      .mobile_menu_btn{
+         height: 40px;
+         width: 40px;
+         border: 1px solid black;
+         margin-left: 10px;
+      }
+      .card_row{
+         width: 100vw;
+      }
+      .tabs{
+         width: 100vw;
+       }
+       .t_left{
+         display: none;
+       }
+       .t_right{
+         float: right;
+         right: 0;
+         position: absolute;
+       }
+      .container{
+         grid-template-columns: 1fr;
+      }
+
+      .right{
+          width: 100vw;
+          border: 1px solid red;
+       }
+      .recent_activities, .reviews{
+         grid-template-columns: 1fr;
+         height: max-content;
+      }
+      .recent_activities, .reviews{
+         width: 98vw;
+         overflow-x: auto;
+      }
+      .left{
+         display: none;
+         
+      }
+      .left.active{
+         display: inline;
+      }
+
+      .recent_orders, .complains, .notes{
+         width: 450px;
+      }
+
+      .notes{
+         margin-top: 30px;
+      }
+      .reviews{
+       }
+       .oim{
+         display: none;
+       }
+       .complains, .notes{
+         width: 93vw;
+        }
+
+   }

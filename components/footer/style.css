@@ -1,0 +1,86 @@
+footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   height: 500px;
+   background: #111;
+   color: white;
+   padding: 70px;
+}
+
+.iden, .f_title{
+   width: 200px;
+   justify-content: left;
+   margin-bottom: 30px;
+}
+.iden label{
+   margin-left: 10px;
+   color: orangered;
+}
+
+.iden .logo{
+   height: 50px;
+   width: 50px;
+   overflow: hidden;
+   border-radius: 50%;
+  
+}
+.f_title{
+   margin-bottom: 60px;
+}
+.iden .logo img{
+    width: 100%;
+}
+
+.divs .sub_info{
+   color: grey;
+   font-weight: 300;
+   font-size: 14px;
+   margin-bottom: 20px;
+   width: 80%;
+   line-height: 25px;
+}
+.socail{
+   width: 200px;
+   height: 25px;
+   border: 1px solid white;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   font-size: 20px;
+   margin-top: 20px;
+ }
+ .divs .input{
+   width: 90%;
+   position: relative;
+   height: 50px;
+ }
+ .divs .input .text{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   border: none;
+   background: #343131;
+   padding: 10px;
+   color: white;
+
+ }
+ .divs .submit{
+   z-index: 2;
+   width: 100px;
+   background: transparent;
+   height: 100%;
+   position: absolute;
+   right: 0;
+   top: 0;
+   border: none;
+   color: orangered;
+   
+ }
+
+ .copyright{
+    bottom: 10px;
+   color: grey;
+   font-size: 12px;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 30px;
+  }
